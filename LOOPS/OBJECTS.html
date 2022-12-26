@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a={
+            name:'Manasa',
+            age:22,
+            oId:'ZLRSE-193',
+            price:500,
+            adrees: {
+                hno:3-6,
+                mondal:'choppadandi',
+                dstrct:'Karimnagar',
+                pincode:505415,
+                street:"bustand",//Nested object 
+            }
+            };
+            // accesed hole object
+            console.log(a);
+            // access the property of an object 
+            console.log(a.age);
+            // access the properties by using dot notation and [] bracket notation
+            console.log(a.oId);//Dot N
+            console.log(a['name']);//Bracket N   note:bracket notations acces dynamically also
+            let x='price';
+            console.log(a.x);// undefined but how to acces the property dynamically
+            console.log(a[x]);
+            //Nested Objects, how to acces the nested objects
+            console.log(a.adrees);
+            //also we can apply CURD Operations example below 
+            //CREATE OPERATION
+            let b={};
+            b.brand='Oppo Reno7Pro';
+            b.color="Red";
+            b.price=200;
+            console.log(b);
+            //READ OPERATION above i want only one property
+            console.log(b.color);
+            //UPDATE OPERATION i want to change the price 
+            b.price=300;
+            console.log(b.price);
+            //DELETE OPERATION i want to delete one propert in above object
+            delete b.color;
+            console.log(b);
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <title>Bind Method </title>
+</head>
+<body>
+    <script>
+        let x={name:'Tinku',age:3}
+        let y={name:'Tillu',age:1}
+        function A()
+        {
+            console.log(this.name+"old as "+this.age+"Years");
+        }
+        // console.log(A.bind(x,"Dale","7032795864"));
+        let A1= A.bind(x);
+        A1();
+        let A2= A.bind(y);
+        A2();
+    </script>
+</body>

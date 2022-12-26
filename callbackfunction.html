@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sum=(a,b)=>{return a+b};
+        let mul=(a,b)=>{return a*b};
+        let cal=(a,b,callback)=>{let res=''; return callback(a,b);};
+        let output1=cal(10,10,sum);
+        console.log(output1);
+        let output2=cal(10,2, mul);
+        console.log(output2);
+        output3=cal(20,2,(a,b)=>{return a-b;});
+        console.log(output3);
+
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Array means collection of elements
+        let a=10;
+        let b=20;
+        let c=30;
+        let n=[10,20,30];
+        console.log(n);
+        //dot notation is not working in array
+        // console.log(n.0);
+        //bracket notation is working here 
+        console.log(n[0]);
+        //iteration of element by using loops
+        //1.NORMAL FOR LOOP
+        let x=['W','B','R','S','P'];
+        for(let i=0;i<=x.length-1;i++)
+        {
+            console.log(x[i]);
+        }
+        //for in loop
+        let y='';
+        console.log(x);
+        // other way for in loop ES5
+        let z='';
+        for(let index in x)
+        {
+           z+=`${x[index]}`;
+        }
+        console.log(z);
+        //3rd way  ES6 for of loop
+        let d='';
+        for(let value of d)
+        {
+            d+=`${value}`;
+        }
+        console.log(d);
+        //for each loop ES5
+        let e='';
+        x.forEach(function(x)
+        {
+            x+=`${x}`;
+        });
+        console.log(x);
+        // for each loop with arrow  ES6
+        let f='';
+        x.forEach((x)=>{ x+=`${x}`; });console.log(x);
+    </script>
+</body>
+</html>

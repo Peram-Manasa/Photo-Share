@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Method</title>
+</head>
+<body>
+    <script>
+        // var x={name:'Nagarani',age:27}
+        var y={name:'Sanvitha',age:30}
+        function A(id,number)
+        {
+            return this.name+this.age+" "
+            +id+" "+number;
+        }
+        console.log(A.apply(x,["193","9848628402"]));
+    </script>
+</body>
+</html>

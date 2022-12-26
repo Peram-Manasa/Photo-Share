@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher Order Functions</title>
+</head>
+<body>
+    <script>
+        let a=
+        [
+            {name:'manasa', id:193,place:'Karimnagar'},
+            {name:'rani', id:194,place:'hyderabad'},
+            {name:'shashi', id:195,place:'Kurnoll'},
+            {name:'krithika', id:196,place:'khammam'},
+            {name:'pragathi', id:197,place:'kakinada'}
+        ];
+        let ages=[22,25,24,25,23];
+    //    for(let i=0;i<a.length;i++)
+    //    {
+    //     console.log(a[i]);
+    //    }
+    //for Each
+    a.forEach(function(b)
+    {
+         console.log(a);
+    });
+    //filter
+    let x='';
+    for(let i=0;i<ages.length;i++)
+    {
+        console.log(ages[i]);
+    }
+      let c=ages.filter(function(c)
+      {
+        if(ages>=21)
+        {
+          return true;  
+        }
+      });
+
+      //filer easy method
+      let d=ages.filter(age=>age>=21);
+      console.log(d);
+
+    </script>
+    
+</body>
+</html>
